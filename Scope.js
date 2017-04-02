@@ -1,4 +1,4 @@
-class Scope {
+export default class Scope {
   constructor(domElement) {
     this.$$watchers = [];
     this.domElement = domElement || document.body;
@@ -107,5 +107,3 @@ class Scope {
     return this.nodes;
   }
 }
-
-module.expots = Scope;
