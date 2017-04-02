@@ -97,7 +97,6 @@ class Scope {
 
     let n, a = [],
       walk = document.createTreeWalker(this.domElement, NodeFilter.SHOW_TEXT, function (node) {
-        console.log(node);
         return regex.test(node.nodeValue);
       }, false);
 
